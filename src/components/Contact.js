@@ -1,6 +1,7 @@
 import React from 'react'
 import {MDBMask, MDBView, MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon} from 'mdbreact'
 import image from '../contact.jpeg'
+import * as emailjs from 'emailjs-com'
 
 class Contact extends React.Component{
     constructor(){
@@ -18,9 +19,23 @@ class Contact extends React.Component{
     }
 handleClick(event){
 event.preventDefault();
-var content=this.state.name+this.state.no+this.state.email+this.state.msg;
+
 
 alert("Tack! "+this.state.name+" Vi ska återkomma så snart vi kan!")
+
+let templateParams = {
+    from_name: this.state.name,
+    to_name: 'angie.granberg@gmail.com',
+    subject: this.state.no,
+    message_html: this.state.msg
+   }
+
+emailjs.send(
+    'gmail',
+    'template_JDBwODW4',
+    templateParams,
+    'user_j89bAgOgGCuKBDwdScPsr'
+   )
 }
 handleChange1(event){
 this.setState({name:event.target.value})
