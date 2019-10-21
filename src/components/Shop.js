@@ -4,7 +4,7 @@ function Shop(){
     return (
         <div>
             Im Shop
-            </div>
+        </div>
     )
 }
 
