@@ -31,7 +31,7 @@ let templateParams = {
    }
 
 emailjs.send(
-    'gmail',
+    'angie.granberg@gmail.com',
     'template_JDBwODW4',
     templateParams,
     'user_j89bAgOgGCuKBDwdScPsr'
