@@ -9,8 +9,8 @@ function Home(){
             <img src={image} className="img-fluid"alt="carpenter"/>
               
             <MDBMask overlay="light" className="flex-center flex-column text-white text-center">
-              <h2>We are Sundsavll Snickare</h2>
-              <h5>Let us build for you!</h5>
+              <h2>Vi är Sundsvall Snickare</h2>
+              <h5>Vi kan bygga för dig!</h5>
            
             </MDBMask>
             </MDBView>
