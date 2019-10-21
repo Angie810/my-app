@@ -2,7 +2,41 @@ import React from 'react'
 import {MDBMask, MDBView, MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon} from 'mdbreact'
 import image from '../contact.jpeg'
 
-function Contact(){
+class Contact extends React.Component{
+    constructor(){
+    super()
+    this.state={
+        name:'',
+        no:'',
+        email:'',
+        msg:''}
+    this.handleClick=this.handleClick.bind(this)
+    this.handleChange1=this.handleChange1.bind(this)
+    this.handleChange2=this.handleChange2.bind(this)
+    this.handleChange3=this.handleChange3.bind(this)
+    this.handleChange4=this.handleChange4.bind(this)
+    }
+handleClick(event){
+event.preventDefault();
+var content=this.state.name+this.state.no+this.state.email+this.state.msg;
+
+alert("Tack! "+this.state.name+" Vi ska återkomma så snart vi kan!")
+}
+handleChange1(event){
+this.setState({name:event.target.value})
+}
+handleChange2(event){
+this.setState({email:event.target.value})
+}
+handleChange3(event){
+this.setState({no:event.target.value})
+}
+handleChange4(event){
+this.setState({msg:event.target.value})
+}
+
+
+    render(){
     return (
         <div>
                <MDBView>
@@ -23,8 +57,8 @@ function Contact(){
             </label>
             <input
               type="text"
-              id="defaultFormContactNameEx"
-              className="form-control"
+              id="name"
+              className="form-control" value={this.state.name} onChange={this.handleChange1}
             />
             <br />
             <label htmlFor="defaultFormContactEmailEx" className="grey-text">
@@ -32,8 +66,8 @@ function Contact(){
             </label>
             <input
               type="email"
-              id="defaultFormContactEmailEx"
-              className="form-control"
+              id="email"
+              className="form-control" value={this.state.email} onChange={this.handleChange2}
             />
             <br />
             <label htmlFor="defaultFormContactEmailEx" className="grey-text">
@@ -41,22 +75,11 @@ function Contact(){
             </label>
             <input
               type="phonenumber"
-              id="defaultFormContactEmailEx"
-              className="form-control"
+              id="no"
+              className="form-control" value={this.state.no} onChange={this.handleChange3}
             />
             <br />
-            <label
-              htmlFor="defaultFormContactSubjectEx"
-              className="grey-text"
-            >
-              Rubrik
-            </label>
-            <input
-              type="text"
-              id="defaultFormContactSubjectEx"
-              className="form-control"
-            />
-            <br />
+            
             <label
               htmlFor="defaultFormContactMessageEx"
               className="grey-text"
@@ -65,12 +88,12 @@ function Contact(){
             </label>
             <textarea
               type="text"
-              id="defaultFormContactMessageEx"
+              id="msg"
               className="form-control"
-              rows="3"
+              rows="3" value={this.state.msg} onChange={this.handleChange4}
             />
             <div className="text-center mt-4">
-              <MDBBtn color="red" outline type="submit">
+              <MDBBtn color="red" outline type="submit" onClick={this.handleClick}>
                 Skicka
                 <MDBIcon far icon="paper-plane" className="ml-2" />
               </MDBBtn>
@@ -82,6 +105,7 @@ function Contact(){
             </MDBView>
             </div>
     )
+    }
 }
 
 export default Contact;
