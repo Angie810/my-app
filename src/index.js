@@ -8,5 +8,5 @@ import Home from './components/Home'
 
 
 
-ReactDOM.render(<BrowserRouter><App /><Route exact path='/' component={Home} /></BrowserRouter>, document.getElementById('root'));
+ReactDOM.render(<BrowserRouter basename="/my-app/"><App /></BrowserRouter>, document.getElementById('root'));
 

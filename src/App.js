@@ -20,10 +20,10 @@ function App() {
 <Navbar bg="red" variant="light">
    
     <Nav className="mr-auto">
-      <Link to="home" className="nav-link"><img src={homeIcon} width="25" height="25" /></Link>
-      <Link to="shop" className="nav-link">Shop</Link>
-      <Link to="about" className="nav-link">About</Link>
-      <Link to="contact" className="nav-link">Contact</Link>
+      <Link to="/" className="nav-link"><img src={homeIcon} width="25" height="25" /></Link>
+      <Link to="/Shop" className="nav-link">Shop</Link>
+      <Link to="/About" className="nav-link">About</Link>
+      <Link to="/Contact" className="nav-link">Contact</Link>
       
     </Nav>
    
@@ -31,9 +31,9 @@ function App() {
 
 
 <Switch>
-<Route exact path='/home'><Home />
-          </Route>
-          <Route path="/shop"><Shop /> </Route>
+<Route exact path='/' component={Home}/>
+          
+          <Route path="/Shop" component={Shop}/>
           <Route path="/about"><About /> </Route>
           <Route path="/contact"><Contact /> </Route>
           
