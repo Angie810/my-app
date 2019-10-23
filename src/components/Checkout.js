@@ -46,8 +46,9 @@ function Checkout(){
       </label>
     </div>
   </div>
-  <button type="submit" className="btn btn-primary">Sign in</button>
-  <button type="submit" className="btn btn-primary">Register</button>
+  <Link to="/about">
+  <button type="submit" className="btn btn-primary">Sign in</button></Link>
+  <Link to="/about"></Link><button type="submit" className="btn btn-primary">Register</button><Link to="/about">
 </form>
         </div>
        </React.Fragment>
