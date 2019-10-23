@@ -12,6 +12,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import image from './carpenter.jpg'
 import homeIcon from './homeIcon.png'
 import {BrowserRouter} from 'react-router-dom'
+import Cart from './components/Cart'
 
 
 function App() {
@@ -21,10 +22,12 @@ function App() {
    
     <Nav className="mr-auto">
       <Link to="/" className="nav-link"><img src={homeIcon} width="25" height="25" /></Link>
-      <Link to="/Shop" className="nav-link">Shop</Link>
-      <Link to="/About" className="nav-link">About</Link>
-      <Link to="/Contact" className="nav-link">Contact</Link>
+     
       
+      <Link to="/About" className="nav-link">About</Link>
+      <Link to="/Contact" className="nav-link">Contact</Link>  
+      <Link to="/Shop" className="nav-link">Shop</Link>
+      <Link to="/Cart" className="nav-link">Cart</Link>
     </Nav>
    
   </Navbar>
@@ -36,6 +39,7 @@ function App() {
           <Route path="/Shop" component={Shop}/>
           <Route path="/about"><About /> </Route>
           <Route path="/contact"><Contact /> </Route>
+          <Route path="/cart" component={Cart}/>
           
           
   </Switch>
