@@ -58,17 +58,17 @@ this.setState({msg:event.target.value})
             <img src={image} className="img-fluid"alt="carpenter"/>
               
             <MDBMask overlay="light" className="flex-center flex-column text-white text-center">
-              <h2>Vi är Sundsvall Snickare</h2>
-              <h5>Vi kan bygga för dig!</h5>
+              <h2>We are Sundsvall Snickare</h2>
+              <h5>Let us build for you!</h5>
            
             </MDBMask>
             <MDBContainer>
       <MDBRow>
         <MDBCol md="6">
           <form>
-            <p className="h4 text-center mb-4">Kontakta oss</p>
+            <p className="h4 text-center mb-4">Write to us</p>
             <label htmlFor="defaultFormContactNameEx" className="grey-text">
-              Namn
+              Name
             </label>
             <input
               type="text"
@@ -77,7 +77,7 @@ this.setState({msg:event.target.value})
             />
             <br />
             <label htmlFor="defaultFormContactEmailEx" className="grey-text">
-              Din email adress
+              Your email address
             </label>
             <input
               type="email"
@@ -86,7 +86,7 @@ this.setState({msg:event.target.value})
             />
             <br />
             <label htmlFor="defaultFormContactEmailEx" className="grey-text">
-              Din telefon nummer
+              Your number
             </label>
             <input
               type="phonenumber"
@@ -99,7 +99,7 @@ this.setState({msg:event.target.value})
               htmlFor="defaultFormContactMessageEx"
               className="grey-text"
             >
-              Din meddelande
+              Your message
             </label>
             <textarea
               type="text"
@@ -109,7 +109,7 @@ this.setState({msg:event.target.value})
             />
             <div className="text-center mt-4">
               <MDBBtn color="red" outline type="submit" onClick={this.handleClick}>
-                Skicka
+                Send
                 <MDBIcon far icon="paper-plane" className="ml-2" />
               </MDBBtn>
             </div>

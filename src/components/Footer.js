@@ -14,7 +14,7 @@ function Footer() {
         <MDBCol md="6">
           <h5 className="title">Sundsvall Snickare</h5>
           <p>
-            Vi är en små familj företag som bildas 2019. 
+            We are a small family-run building company. We love what we do. The building interest has grown since I was a little kid when I watched my dad build his house, garage and lots of DIY projects. 
           </p>
         </MDBCol>
         <MDBCol md="6">
@@ -24,7 +24,7 @@ function Footer() {
         <h6 className="text-uppercase font-weight-bold">Contact</h6>
         <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" width="60px" />
         <p>
-          <i className="fas fa-home mr-3"></i> Birsta City, Sundsbruk, Sverige</p>
+          <i className="fas fa-home mr-3"></i>Lisataet Road, Sundsbruk, Sweden</p>
         <p>
           <i className="fas fa-envelope mr-3"></i> pluppenplupp@hotmail.com</p>
         <p>
@@ -38,7 +38,7 @@ function Footer() {
     <div className="footer-copyright text-center py-3">
     <MDBContainer fluid>
         <img src={saw} alt="saw" width="100" height="100"></img>
-        <h2>Välkommen till oss!</h2>
+        <h2>Welcome to Sundsvall Snickare!</h2>
     </MDBContainer>
     </div>
     <div className="footer-copyright text-center py-3">
