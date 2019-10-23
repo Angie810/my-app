@@ -13,6 +13,7 @@ import image from './carpenter.jpg'
 import homeIcon from './homeIcon.png'
 import {BrowserRouter} from 'react-router-dom'
 import Cart from './components/Cart'
+import Checkout from './components/Checkout'
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
           <Route path="/about"><About /> </Route>
           <Route path="/contact"><Contact /> </Route>
           <Route path="/cart" component={Cart}/>
+          <Route path="/checkout" component={Checkout}/>
           
           
   </Switch>
