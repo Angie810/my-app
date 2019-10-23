@@ -33,7 +33,7 @@ class Cart extends Component{
                                     <div className="card-body">
                                         <h5 className="card-title">{item.title}</h5>
                                         <p>{item.desc}</p>
-                                        <p><b>Price: {item.price}$</b></p> 
+                                        <p><b>Price: {item.price}sek</b></p> 
                                         <p>
                                             <b>Quantity: {item.quantity}</b> 
                                         </p>
