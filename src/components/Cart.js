@@ -24,7 +24,6 @@ class Cart extends Component{
             (  
                 this.props.items.map(item=>{
                     return(
-                       
                         <li className="card" key={item.id}>
                                     <div className="item-img"> 
                                         <img src={item.img} alt={item.img} width="18rem" className="card-img-top"/>

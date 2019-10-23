@@ -1,10 +1,12 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import { connect } from 'react-redux'
 
 function Checkout(){
     return (
         <React.Fragment>
-            <h2>Checkout</h2>
+        <h2>Checkout</h2>
+        <h2></h2>
         <div className="container">
     <form>
   <div className="form-row">

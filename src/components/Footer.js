@@ -6,6 +6,7 @@ import saw from '../saw.png'
 
 
 
+
 function Footer() {
   return (
     <MDBFooter color="red" className="font-small pt-4 mt-4">
@@ -25,8 +26,9 @@ function Footer() {
         <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" width="60px" />
         <p>
           <i className="fas fa-home mr-3"></i>Lisataet Road, Sundsbruk, Sweden</p>
-        <p>
-          <i className="fas fa-envelope mr-3"></i> pluppenplupp@hotmail.com</p>
+        
+          <a href="mailto: pluppenplupp@hotmail.com" obfuscate={true}><p>
+          <i className="fas fa-envelope mr-3"></i> pluppenplupp@hotmail.com</p></a>
         <p>
         <i className="fas fa-phone mr-3"></i>073-041 86 14</p>
        
